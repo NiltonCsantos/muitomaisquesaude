@@ -158,8 +158,13 @@ main .services .div-services {
   gap: 5rem;
   flex-wrap: wrap;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   padding: 0rem 3rem 3rem 3rem;
+}
+@media (max-width: 500px) {
+  main .services .div-services {
+    width: 100vw;
+  }
 }
 main .services .div-services a {
   color: #000000;

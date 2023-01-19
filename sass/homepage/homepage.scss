@@ -175,11 +175,11 @@ main{
       gap: 5rem;
       flex-wrap: wrap;
       height: 100%;
-      width: 100vw;
+      width: 100%;
       padding: 0rem 3rem 3rem 3rem;
 
       @media(max-width: 500px){
-        
+        width: 100vw;
       }
       a{
         color: #000000;
@@ -188,6 +188,7 @@ main{
       .card{
         width: 18rem;
         
+
          @media(max-width:500px){
            width: 1100%;
            flex-direction: column;
