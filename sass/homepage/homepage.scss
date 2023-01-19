@@ -177,7 +177,6 @@ main{
       height: 100%;
       width: 100vw;
       padding: 0rem 3rem 3rem 3rem;
-      border: solid 2px rgb(128, 31, 31);
 
       @media(max-width: 500px){
         
@@ -187,14 +186,11 @@ main{
       }
 
       .card{
-        border: solid 2px black;
         width: 18rem;
         
-
          @media(max-width:500px){
            width: 1100%;
            flex-direction: column;
-           border: solid 2px black;
          }
 
         &:hover{
