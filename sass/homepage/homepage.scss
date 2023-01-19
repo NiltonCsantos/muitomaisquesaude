@@ -95,7 +95,6 @@ a{
         margin-top: -6rem;
         background: url('../../image/card.png') no-repeat no-repeat;
         background-size: cover;
-        border: solid 2px black;
         justify-content: flex-end;
         color: #000000 ;
 
@@ -165,6 +164,8 @@ main{
     padding: 3rem;
     p{
       margin-left: 1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
 
     .div-services{
@@ -174,20 +175,27 @@ main{
       gap: 5rem;
       flex-wrap: wrap;
       height: 100%;
-      width: 100%;
+      width: 100vw;
       padding: 0rem 3rem 3rem 3rem;
+      border: solid 2px rgb(128, 31, 31);
 
+      @media(max-width: 500px){
+        
+      }
       a{
         color: #000000;
       }
 
       .card{
-
+        border: solid 2px black;
         width: 18rem;
+        
 
-        @media(max-width:390px){
-          width: 100%;
-        }
+         @media(max-width:500px){
+           width: 1100%;
+           flex-direction: column;
+           border: solid 2px black;
+         }
 
         &:hover{
           background-color:#2298FF ;
@@ -218,6 +226,10 @@ main{
     align-items: center;
     justify-content: center;
     padding: 3rem;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
     .div-clients{
       width: 500px;
 
@@ -239,6 +251,12 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    p{
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    
     .div-contatc{
       display: flex;
       flex-wrap: wrap;
@@ -260,6 +278,8 @@ main{
     align-items: center;
     justify-content: center;
     background-color: #e2d7d7;
+    font-size: 1.2rem;
+    font-weight: 500;
 
     .div-about{
       width: 500px;
@@ -300,6 +320,7 @@ main{
     font-weight: 500;
   }
   #text-aside{
+    font-size: 1.2rem;
     font-weight: 400;
     margin-top: -1rem;
   }

@@ -88,7 +88,6 @@ a:hover {
     margin-top: -6rem;
     background: url("../../image/card.png") no-repeat no-repeat;
     background-size: cover;
-    border: solid 2px black;
     justify-content: flex-end;
     color: #000000;
   }
@@ -149,6 +148,8 @@ main .services {
 }
 main .services p {
   margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 main .services .div-services {
   display: flex;
@@ -157,18 +158,22 @@ main .services .div-services {
   gap: 5rem;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   padding: 0rem 3rem 3rem 3rem;
+  border: solid 2px rgb(128, 31, 31);
 }
 main .services .div-services a {
   color: #000000;
 }
 main .services .div-services .card {
+  border: solid 2px black;
   width: 18rem;
 }
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   main .services .div-services .card {
-    width: 100%;
+    width: 1100%;
+    flex-direction: column;
+    border: solid 2px black;
   }
 }
 main .services .div-services .card:hover {
@@ -194,6 +199,8 @@ main .clients {
   align-items: center;
   justify-content: center;
   padding: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 main .clients .div-clients {
   width: 500px;
@@ -215,6 +222,10 @@ main .contact {
   align-items: center;
   justify-content: center;
 }
+main .contact p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 main .contact .div-contatc {
   display: flex;
   flex-wrap: wrap;
@@ -234,6 +245,8 @@ main .about {
   align-items: center;
   justify-content: center;
   background-color: #e2d7d7;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 main .about .div-about {
   width: 500px;
@@ -271,6 +284,7 @@ main #copy {
   font-weight: 500;
 }
 main #text-aside {
+  font-size: 1.2rem;
   font-weight: 400;
   margin-top: -1rem;
 }
