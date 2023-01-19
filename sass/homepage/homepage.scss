@@ -1,0 +1,307 @@
+@import "../variables/color.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  background-color: #2298FF;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: $tertyareColor;
+  &:hover{
+    color: #ffffffbd ;
+  }
+}
+
+.cover-content{
+
+  height: 100vh;
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    p{
+      font-size: 2rem;
+    }
+
+    
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 1.2rem;
+      list-style: none;
+      margin-top: 0.73rem;
+      @media(max-width:990px){
+        display: none;
+      }
+
+    }
+
+    .btn-menu{
+      border: 0px solid transparent;
+      color: $tertyareColor;
+      display: none;
+      @media(max-width: 990px){
+        display: block;
+        margin-top: -0.8rem;
+      }
+      @media(max-width: 560px){
+        display: none;
+      }
+    }
+
+    #offcanvasExampleLabel{
+      color: $tertyareColor;
+    }
+    
+    #menu-mobile{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+    }
+
+  }
+
+  .main-cover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    .text-cover{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 50%;
+      color: $tertyareColor;
+
+      @media(max-width: 900px){
+
+        width: 100%;
+        height: 80%;
+        margin-top: -6rem;
+        background: url('../../image/card.png') no-repeat no-repeat;
+        background-size: cover;
+        border: solid 2px black;
+        justify-content: flex-end;
+        color: #000000 ;
+
+      }
+
+      @media(max-width: 550px){
+        background:url() no-repeat no-repeat;
+        justify-content: center;
+        color: $tertyareColor;
+      }
+
+    
+      p{
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      h1{
+        margin-top: -1.2rem;
+      }
+      h3{
+        margin-top: -0.8rem;
+      }
+
+      button{
+        border: 1px solid #05c2059f;
+        background: none;
+        border-radius: 15px;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        background-color: #05c2059f;
+      }
+
+    }
+
+    .img-cover{
+      width: 50%;
+      height: 90vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 4rem;
+      background: url('../../image/card.png') no-repeat no-repeat;
+      background-size: cover;
+
+      @media(max-width: 900px){
+
+        display: none;
+
+      }
+    }
+  }
+
+}
+
+main{
+  height: 100vh;
+  width: 100%;
+  
+  .services{
+    background-color: #e2d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    p{
+      margin-left: 1rem;
+    }
+
+    .div-services{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+      padding: 0rem 3rem 3rem 3rem;
+
+      a{
+        color: #000000;
+      }
+
+      .card{
+
+        width: 18rem;
+
+        @media(max-width:390px){
+          width: 100%;
+        }
+
+        &:hover{
+          background-color:#2298FF ;
+          transition: 1s;
+          color: $tertyareColor;
+          a{
+            color: $tertyareColor;
+            transition: 1s;
+            &:hover{
+              color: #ffffffbd ;
+            }
+          }
+          h6{
+            color: $tertyareColor;
+            transition: 1s;
+          }
+        }
+
+
+      }
+
+    }
+  }
+  .clients{
+    color: $tertyareColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    .div-clients{
+      width: 500px;
+
+      @media(max-width: 550px){
+        width: 90%;
+      }
+    }
+
+    #img-clients{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .contact{
+    padding: 3rem;
+    background-color: #e2d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .div-contatc{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+    }
+    a{
+      color: #000000;
+      &:hover{
+        color:$tertyareColor ;
+      }
+    }
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2d7d7;
+
+    .div-about{
+      width: 500px;
+
+      @media(max-width: 500px){
+        width: 100%;
+        padding: 15px;
+      }
+    }
+  }
+
+  aside{
+    background-color: #e2d7d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    footer{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 15px;
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center;
+
+      .contact-footer{
+        display: flex;
+        gap: 1rem;
+      }
+      #icons-footer{
+        color: #000000;
+      }
+    }
+  }
+
+  #copy{
+    font-weight: 500;
+  }
+  #text-aside{
+    font-weight: 400;
+    margin-top: -1rem;
+  }
+}
+
