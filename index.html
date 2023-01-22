@@ -22,6 +22,10 @@
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Link Favicon -->
+
+  <link rel="shortcut icon" href="icon/favicon-16x16.png" type="image/x-icon">
+
   <title>Muito mais que saúde</title>
 </head>
 <body>
@@ -30,8 +34,7 @@
 
     <header>
 
-      <p><a href="#" data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom" data-aos-duration="3000" class="descriptionCoverContent">Muito mais que saúde</a></p>
+      <p><a href="#">Muito mais que saúde</a></p>
 
       <ul>
 
@@ -88,7 +91,11 @@
 
       </div>
 
-      <div class="img-cover"></div>
+      <div class="img-cover">
+
+        <img src="image/card.png" alt="">
+
+      </div>
 
     </div>
 
@@ -137,47 +144,36 @@
         <p>Conheça meus pacientes  <i class="bi bi-arrow-down"></i></p>
 
         <div class="div-clients">
-              
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            </div>
+
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="image/client2.png" alt="..."  id="img-clients">
-                <h6>Ana</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt, numquam at voluptates sequi placeat error laudantium repellat officiis perferendis autem blanditiis id accusamus voluptas suscipit illum optio velit impedit.</p>
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="image/client2.png" class="d-block w-100" alt="...">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit quam repellendus minima velit hic.</p>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image/client1.png" class="d-block w-100" alt="...">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit quam repellendus minima velit hic.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/client3.png" class="d-block w-100" alt="...">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit quam repellendus minima velit hic.</p>
+                </div>
             </div>
-            <div class="carousel-item">
-            <img src="image/client1.png"alt="..." id="img-clients">
-            <h6>Rafel</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt, numquam at voluptates sequi placeat error laudantium repellat officiis perferendis autem blanditiis id accusamus voluptas suscipit illum optio velit impedit.</p>
-            </div>
-            <div class="carousel-item">
-              <img src="image/client3.png"alt="..." id="img-clients">
-              <h6>Rafaela</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt, numquam at voluptates sequi placeat error laudantium repellat officiis perferendis autem blanditiis id accusamus voluptas suscipit illum optio velit impedit.</p>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next </span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button"               data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button"     data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+              
+            
       
 
-      </div>
+       </div>
 
     </div>
 
@@ -190,7 +186,7 @@
       <div class="div-contatc">
         
         <p><i class="bi bi-telephone-forward"></i> (79) 996817729</p>
-        <p><i class="bi bi-envelope"></i> <a href="mailto:niltoncesarsantos468@gmail.com" target="_blank" rel="external">niltoncesarsantos468@gmail.com</a></p>
+        <p><i class="bi bi-envelope"></i> <a href="mailto:niltoncesarsantos468@gmail.com" target="_blank" rel="external" id="email">niltoncesarsantos468@gmail.com</a></p>
         <p><i class="bi bi-whatsapp"><a href="https://api.whatsapp.com/send?phone=5579996817729&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Tenho%20interesse%20em%20contratar%20os%20servi%C3%A7os%20da%20empresa" target="_blank" rel="external"> (79) 996817729</a></i></p>
         <p><i class="bi bi-instagram"><a href="https://instagram.com/cesar____16?igshid=YmMyMTA2M2Y=" target="_blank" rel="external"></i> cesar____16</a></p>
       

@@ -8,7 +8,7 @@
 }
 
 body{
-  background-color: #2298FF;
+  background-color: $primaryColor;
   height: 100vh;
 }
 
@@ -32,6 +32,9 @@ a{
 
     p{
       font-size: 2rem;
+      @media(max-width: 316px){
+        font-size: 1.7rem;
+      }
     }
 
     
@@ -80,6 +83,10 @@ a{
     justify-content: space-between;
     height: 100%;
 
+    @media(max-width:900px){
+      flex-direction: column;
+    }
+
     .text-cover{
       display: flex;
       align-items: center;
@@ -91,12 +98,8 @@ a{
       @media(max-width: 900px){
 
         width: 100%;
-        height: 80%;
-        margin-top: -6rem;
-        background: url('../../image/card.png') no-repeat no-repeat;
-        background-size: cover;
+        height: 100%;
         justify-content: flex-end;
-        color: #000000 ;
 
       }
 
@@ -120,32 +123,36 @@ a{
       }
 
       button{
-        border: 1px solid #05c2059f;
+        border: 1px solid $secundaryColor;
         background: none;
         border-radius: 15px;
         padding: 5px;
         cursor: pointer;
         font-size: 1.5rem;
-        background-color: #05c2059f;
+        background-color: $secundaryColor;
       }
 
     }
 
     .img-cover{
       width: 50%;
-      height: 90vh;
+      height: 100vh;
       display: flex;
       align-items: flex-start;
       justify-content: center;
       margin-bottom: 4rem;
-      background: url('../../image/card.png') no-repeat no-repeat;
-      background-size: cover;
 
-      @media(max-width: 900px){
-
-        display: none;
-
+      @media(max-width:900px){
+        width: 100%;
+        height: 100vh;
       }
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+
+     
     }
   }
 
@@ -195,7 +202,7 @@ main{
          }
 
         &:hover{
-          background-color:#2298FF ;
+          background-color:$primaryColor ;
           transition: 1s;
           color: $tertyareColor;
           a{
@@ -252,6 +259,11 @@ main{
     p{
       font-size: 1.2rem;
       font-weight: 500;
+      @media(max-width: 310px){
+        #email{
+          font-size: 1.1rem;
+        }
+      }
     }
     
     .div-contatc{
@@ -260,6 +272,7 @@ main{
       gap: 3rem;
       justify-content: center;
       align-items: center;
+      
     }
     a{
       color: #000000;
@@ -315,11 +328,19 @@ main{
 
   #copy{
     font-weight: 500;
+    
+    @media(max-width:344px){
+      font-size: 0.9rem;
+    }
   }
   #text-aside{
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: -1rem;
+
+    @media(max-width:344px){
+      font-size: 1rem;
+    }
   }
 }
 

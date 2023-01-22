@@ -8,7 +8,7 @@ document.getElementById("btn-contact").addEventListener("click", ()=>{
   const a=document.getElementById("link-btn-contact");
 
 
-  p.textContent="Desde já, lhe parabenizo, iniciar o processo de terapia é um processo importante e árduo, pois iremos traçar uma jornada em busca do autoconhecimento."
+  p.textContent="Parabéns! iniciar o processo de terapia é um processo importante e árduo. Iremos te redirecionar ao whatsapp"
 
   div.style.textAlign="center";
   div.style.border="2px solid transparent"
@@ -40,7 +40,7 @@ document.getElementById("btn-contact").addEventListener("click", ()=>{
 
     a.setAttribute("href", "#");
 
-  },4000)
+  },5000)
 
 })
 

@@ -30,6 +30,11 @@ a:hover {
 .cover-content header p {
   font-size: 2rem;
 }
+@media (max-width: 316px) {
+  .cover-content header p {
+    font-size: 1.7rem;
+  }
+}
 .cover-content header ul {
   display: flex;
   align-items: center;
@@ -73,6 +78,11 @@ a:hover {
   justify-content: space-between;
   height: 100%;
 }
+@media (max-width: 900px) {
+  .cover-content .main-cover {
+    flex-direction: column;
+  }
+}
 .cover-content .main-cover .text-cover {
   display: flex;
   align-items: center;
@@ -84,12 +94,8 @@ a:hover {
 @media (max-width: 900px) {
   .cover-content .main-cover .text-cover {
     width: 100%;
-    height: 80%;
-    margin-top: -6rem;
-    background: url("../../image/card.png") no-repeat no-repeat;
-    background-size: cover;
+    height: 100%;
     justify-content: flex-end;
-    color: #000000;
   }
 }
 @media (max-width: 550px) {
@@ -120,18 +126,21 @@ a:hover {
 }
 .cover-content .main-cover .img-cover {
   width: 50%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 4rem;
-  background: url("../../image/card.png") no-repeat no-repeat;
-  background-size: cover;
 }
 @media (max-width: 900px) {
   .cover-content .main-cover .img-cover {
-    display: none;
+    width: 100%;
+    height: 100vh;
   }
+}
+.cover-content .main-cover .img-cover img {
+  width: 100%;
+  height: auto;
 }
 
 main {
@@ -228,6 +237,11 @@ main .contact p {
   font-size: 1.2rem;
   font-weight: 500;
 }
+@media (max-width: 310px) {
+  main .contact p #email {
+    font-size: 1.1rem;
+  }
+}
 main .contact .div-contatc {
   display: flex;
   flex-wrap: wrap;
@@ -285,10 +299,20 @@ main aside footer #icons-footer {
 main #copy {
   font-weight: 500;
 }
+@media (max-width: 344px) {
+  main #copy {
+    font-size: 0.9rem;
+  }
+}
 main #text-aside {
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: -1rem;
+}
+@media (max-width: 344px) {
+  main #text-aside {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
